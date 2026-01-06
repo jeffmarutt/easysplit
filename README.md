@@ -32,3 +32,10 @@ The app is built as a static bundle and served by Nginx.
    docker run -p 4173:4173 easysplit
    ```
 3. Configure the `GEMINI_API_KEY` build arg in Easypanel so the AI receipt scan feature works.
+
+
+### Using buildpacks on Easypanel
+
+If you deploy with buildpacks (e.g., `pack build`), a `Procfile` is provided and the `start` script runs `vite preview` on `0.0.0.0:${PORT:-4173}` so the platform can set the port automatically.
+
+
