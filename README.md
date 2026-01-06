@@ -38,4 +38,3 @@ The app is built as a static bundle and served by Nginx.
 
 If you deploy with buildpacks (e.g., `pack build`), a `Procfile` is provided and the `start` script runs `vite preview` on `0.0.0.0:${PORT:-4173}` so the platform can set the port automatically.
 
-
